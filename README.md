@@ -24,3 +24,5 @@ An O-RAN rApp for energy saving, using O1 performance data for traffic predictio
 ## 本地執行
 ```bash
 uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+python src/pipeline.py --minutes 10080 --horizon 30 --ma 15
